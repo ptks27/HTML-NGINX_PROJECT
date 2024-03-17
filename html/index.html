@@ -1,0 +1,444 @@
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="stylesheet"  href="myweb/test.css"/>
+</head>
+<style>
+    
+.box{
+background-color:#264653;
+padding: auto;
+margin-left: 460px;
+width: 1000px;
+height: auto;
+border: 4px solid #b2ebb9;
+            
+}
+        
+
+p {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+span {
+  position: absolute;
+  border-radius: 100vmax;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(5, 0, 245, 0.904),
+    #48cae4
+  );
+}
+
+
+.bottom {
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 0, 245, 0.904),
+    #48cae4,
+    transparent 50%
+  );
+}
+
+.right {
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(201, 61, 243, 0.904),
+    rgb(140, 40, 233)
+  );
+}
+
+.left {
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(210, 100, 243, 0.904),
+    rgb(162, 85, 250),
+    transparent 70%
+  );
+}
+
+.top {
+  animation: animateTop 5s ease-in-out infinite;
+}
+
+
+.bottom {
+  animation: animateBottom 5s ease-in-out infinite;
+}
+
+.right {
+  animation: animateRight 5s linear infinite;
+}
+
+.left {
+  animation: animateLeft 5s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+  25% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  0%,
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  75% {
+    opacity: 1;
+    width: 100%;
+  }
+
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateRight {
+  0%,
+  25% {
+    opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+    height: 100%;
+  }
+
+  55%,
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes animateLeft {
+  0%,
+  75% {
+    opacity: 0;
+    bottom: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+    body{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Mitr', sans-serif;
+    background-repeat : no-repeat;
+    background-position : center top;
+    background-color : #1e0131;
+    margin-top: 200px;
+    background-attachment:fixed;
+    font: 0.8em sans-serif;
+    
+}
+
+.video-container video{
+    
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    
+    
+}
+.video-container {
+    z-index:  2;
+    
+}
+.text-container {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: table;
+    
+}
+
+.content{
+    text-align: center;
+    padding: 0x;
+    vertical-align: middle;
+    
+}
+@media only screen and (min-width:768px) {
+    .video-container video{
+        width: 100vw;
+        height:auto;
+    }
+}
+   
+.heading {
+    font-family: Montserrat;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+img {
+    border-radius: 70%;
+}
+i {
+     width: 320px;
+    padding: 10px;
+    border: 4px solid rgb(44, 74, 243);
+    margin: 0;
+    background: rgb(4, 150, 235); 
+}
+nav {
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  background:#341572;
+}
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background:#341572;
+  float:left;
+}
+.i{
+    background-color:#264653;
+    padding: auto;
+    margin-left: 460px;
+    width: 1000px;
+    height: auto;
+    border: 3px solid #ec1e5c;
+    background: linear-gradient(132deg, #740332, #38010d, #4d132b);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    
+  }
+i {
+    width: 320px;
+    padding: 10px;
+    border: 2px solid rgb(139, 104, 223);
+    margin: 0;
+    background: rgb(4, 150, 235); 
+    background: linear-gradient(132deg, #f78f9c, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    
+    
+}h1{
+  animation: glitch 5s linear infinite;
+  font-family:Cursive, sans-serif;
+  
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+h1:before,
+h1:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+h1:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+h1:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+ body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .neons {
+	 
+	 text-align: center;
+}
+ .neons h1 {
+	 font-size: 25px;
+	 text-align: center;
+	 font-weight: bold;
+	 -webkit-animation: glow 2s ease-in-out infinite alternate;
+	 -moz-animation: glow 2s ease-in-out infinite alternate;
+	 animation: glow 2s ease-in-out infinite alternate;
+}
+ @-webkit-keyframes glow {
+	 from {
+		 color: rgb(250, 250, 250);
+		 text-shadow: 0 0 10px #ee0760, 0 0 20px #ee0760, 0 0 30px #ee0760, 0 0 40px #ee0760, 0 0 50px #ee0760, 0 0 60px #b30841, 0 0 70px #b30841, 0 0 90px #b30841;
+	}
+	 to {
+		 color: rgb(248, 246, 253);
+		 text-shadow: 0 0 20px #ee0760, 0 0 30px #ee0760, 0 0 40px #ee0760, 0 0 50px #ee0760, 0 0 60px #ee0760, 0 0 70px #b30841, 0 0 80px #b30841, 0 1 90px #b30841;
+	}
+}
+
+    
+</style>
+
+<body>
+    <header>
+        
+        <div class="video-container">
+            
+            <video autoplay muted loop >
+                <source src="static/uu.mp4" type="video/mp4">
+            </video>
+        </div>
+            <div class="text-container">
+                <div class="content">
+                    <nav style="font-size: 20px;">
+                        <ul>
+                             <li><a href="#">Menu</a>
+                               <ul>
+                                 <li><a href="index.html">Member</a></li>
+                                 <li><a href="page2.html">Grizzly</a></li>
+                                 <li><a href="page3.html">Polar</a></li>
+                                 <li><a href="page4.html">Panda</a></li>
+                               </ul>
+                             </li>
+                           </ul>
+                       </nav>
+                       <br><br>
+                       <div class="container">
+                        <div class="row">
+                           <div class="neons col-12">
+          
+                              <h1><em> Member</em></h1>
+                           </div>
+                        </div>
+                     </div>
+                       
+                <div class="i" style="color: rgb(250, 44, 123);"><br>
+                    <div class="container">
+                        <div class="row">
+                           <div class="neons col-12">
+                    <img src = "static/win.png" border="3" width="150px" height="150px"><br>
+                    <h1 style="color:rgb(255, 255, 255);"><em> Nattipan JARUNAT  &nbsp; ID: 6421605320 </em></h1><br>
+                </div>
+            </div>
+         </div>
+        </div>
+                <div class="i" style="color: rgb(250, 44, 123);"><br>
+                    <div class="container">
+                        <div class="row">
+                           <div class="neons col-12">
+                    <img src = "static/new.png" border="3" width="150px" height="150px"><br>
+                    <h1 style="color:rgb(255, 255, 255);"><em>Nattanan SA-INGTHONG   &nbsp; ID: 6421605338 </em></h1>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+                <div class="i" style="color: rgb(250, 44, 123);"><br>
+                    <div class="container">
+                        <div class="row">
+                           <div class="neons col-12">
+                    <img src = "static/bas.jpg" border="3" width="150px" height="150px"><br>
+                    <h1 style="color:rgb(255, 255, 255);"><em>Phonthakon SAENGTHONGKOED  &nbsp; ID: 6421605435 </h1><br></em>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="i" style="color: rgb(250, 44, 123);"><br>
+                    <div class="container">
+                        <div class="row">
+                           <div class="neons col-12">
+                    <img src = "static/kao.jpg" border="3" width="150px" height="150px"><br>
+                    <h1 style="color:rgb(255, 255, 255);"><em>Sirapat FAKFUMTHON  &nbsp; ID: 6421605567 </em></h1><br>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+         
+    </div>
+    </header>
+</body>
+</html>
